@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="images/house.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Land Area Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="title">
+      <h2>Land Area Converter: Jerib, Kanal, Marla, Square Feet - Seamless Unit Transitions</h2>
+    </div>
+      <div class="parent-div">
+        <div class="land-cal">
+          <div class="land-jerib land">
+            <span>LAND IN JERIB</span>
+            <input
+              type="text"
+              id="jerib"
+              placeholder="Enter land area in selected unit"
+            />
+            <span id="errorjerib"></span>
+          </div>
+
+          <div class="land-kanal land">
+            <span>LAND IN KANAL</span>
+            <input type="text" id="kanal" placeholder="Enter land area in selected unit" />
+            <span id="errorkanal"></span>
+          </div>
+
+          <div class="land-marlas land">
+            <span>LAND IN MARLA'S</span>
+            <input
+              type="text"
+              id="marlas"
+              placeholder="Enter land area in selected unit"
+            />
+            <span id="errormarla"></span>
+          </div>
+
+          <div class="land-feet land">
+            <span>LAND IN SQUARE-FEET</span>
+            <input type="text" id="feet" placeholder="Enter land area in selected unit" />
+            <span id="errorfeet"></span>
+          </div>
+
+          <div class="land-inches land">
+            <span>LAND IN INCHE'S</span>
+            <input
+              type="text"
+              id="inches"
+              placeholder="Enter land area in selected unit"
+            />
+            <span id="errorinches"></span>
+          </div>
+
+          <div class="btn">
+            <button>Refresh</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="static/script.js"></script>
+  </body>
+</html>

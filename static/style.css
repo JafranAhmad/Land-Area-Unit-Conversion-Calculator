@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color--: #D3D3D3;
+    --shadow-color--: #161A1D;
+    --text-color--: #BA181B;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/bg-abstract.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title {
+    padding-top: 10px;
+}
+.container .title h2 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color--);
+    font-size: 18px
+}
+
+.parent-div {
+    width: 50%;
+    margin: 1% auto;
+    display: flex;
+    justify-content: center;
+}
+.parent-div .land-cal{
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 10px;
+    
+}
+
+.land input {
+    width: 100%;
+    height: 35px;
+    padding: 12px 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0.4rem 0.4rem 0.5rem var(--shadow-color--),
+    -0.4rem -0.4rem 0.5rem var(--shadow-color--);
+    background-color: var(--bg-color--);
+    transition: 1s ease-out 0.4s;
+}
+
+.land-cal .land {
+    padding-bottom: 8px;
+}
+
+.land-cal .land span {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: var(--text-color--);
+}
+
+#errorjerib, #errorkanal, #errormarla, #errorfeet, #errorinches {
+    font-size: 10px;
+    padding: 0%;
+    margin: 0%;
+}
+.btn {
+    text-align: center;
+    padding-top: 10px;
+}
+.btn button {
+    padding: 5px 12px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: var(--text-color--);
+    color: var(--bg-color--);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+@media only screen and  (max-width: 810px) {
+    .parent-div {
+        width: 60%;
+    }
+    .title {
+        padding-top: 20px;
+    }
+}
+@media only screen and  (max-width: 780px) {
+   .container .title h2 {
+    width: 55%;
+   }
+}
+@media only screen and  (max-width: 716px) {
+    .parent-div .land-cal{
+        margin-top: 25px;
+    }
+    .parent-div {
+        width: 65%;
+    }
+    .container .title h2 {
+        width: 60%;
+        font-size: 18px
+    }
+}
+@media only screen and  (max-width: 650px) {
+    .parent-div {
+        width: 70%;
+    }
+    .container .title h2 {
+        width: 65%;
+    }
+}
+@media only screen and  (max-width: 600px) {
+    .parent-div {
+        width: 80%;
+    }
+    .container .title h2 {
+        width: 72%;
+    }
+}
+@media only screen and  (max-width: 545px) {
+    .parent-div .land-cal{
+        margin-top: 20px;
+    }
+    .container .title h2 {
+        width: 78%;
+    }
+}
+@media only screen and  (max-width: 500px) {
+    .parent-div .land-cal{
+        margin-top: 20px;
+    }
+    .container .title h2 {
+        width: 85%;
+        font-size: 16px;
+    }
+}
+@media only screen and  (max-width: 410px) {
+    .parent-div .land-cal{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .container .title h2 {
+        width: 90%;
+        font-size: 16px;
+    }
+}
